@@ -69,7 +69,7 @@ function Page() {
         <div className="card-lux p-6">
           <h2 className="mb-4 font-semibold">Manage</h2>
           <div className="grid grid-cols-2 gap-2 text-center text-sm">
-            {[["/admin/users", "Users"], ["/admin/kyc", "KYC"], ["/admin/transactions", "Transactions"], ["/admin/orders", "Orders"], ["/admin/wallet", "Wallet Requests"], ["/admin/messages", "Messages"], ["/admin/content", "Content"], ["/admin/settings", "Settings"]].map(([to, l]) => (
+            {([["/admin/users", "Users"], ["/admin/kyc", "KYC"], ["/admin/transactions", "Transactions"], ["/admin/orders", "Orders"], ["/admin/wallet", "Wallet Requests"], ["/admin/messages", "Messages"], ["/admin/content", "Content"], ["/admin/settings", "Settings"]] as [string, string][]).map(([to, l]) => (
               <Link key={to} to={to} className="btn-outline justify-center">{l}</Link>
             ))}
           </div>
