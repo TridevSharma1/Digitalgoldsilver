@@ -10,33 +10,258 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as BuyGoldRouteImport } from './routes/buy-gold'
+import { Route as BuySilverRouteImport } from './routes/buy-silver'
+import { Route as CalculatorRouteImport } from './routes/calculator'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as NewsRouteImport } from './routes/news'
+import { Route as PlansRouteImport } from './routes/plans'
+import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as RegisterRouteImport } from './routes/register'
+import { Route as TransactionsRouteImport } from './routes/transactions'
+import { Route as WalletRouteImport } from './routes/wallet'
+import { Route as AdminLoginRouteImport } from './routes/admin.login'
+import { Route as LegalDocRouteImport } from './routes/legal.$doc'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuyGoldRoute = BuyGoldRouteImport.update({
+  id: '/buy-gold',
+  path: '/buy-gold',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuySilverRoute = BuySilverRouteImport.update({
+  id: '/buy-silver',
+  path: '/buy-silver',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CalculatorRoute = CalculatorRouteImport.update({
+  id: '/calculator',
+  path: '/calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsRoute = NewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlansRoute = PlansRouteImport.update({
+  id: '/plans',
+  path: '/plans',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegisterRoute = RegisterRouteImport.update({
+  id: '/register',
+  path: '/register',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TransactionsRoute = TransactionsRouteImport.update({
+  id: '/transactions',
+  path: '/transactions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WalletRoute = WalletRouteImport.update({
+  id: '/wallet',
+  path: '/wallet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin/login',
+  path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalDocRoute = LegalDocRouteImport.update({
+  id: '/legal/$doc',
+  path: '/legal/$doc',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/buy-gold': typeof BuyGoldRoute
+  '/buy-silver': typeof BuySilverRoute
+  '/calculator': typeof CalculatorRoute
+  '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
+  '/faq': typeof FaqRoute
+  '/login': typeof LoginRoute
+  '/news': typeof NewsRoute
+  '/plans': typeof PlansRoute
+  '/pricing': typeof PricingRoute
+  '/profile': typeof ProfileRoute
+  '/register': typeof RegisterRoute
+  '/transactions': typeof TransactionsRoute
+  '/wallet': typeof WalletRoute
+  '/admin/login': typeof AdminLoginRoute
+  '/legal/$doc': typeof LegalDocRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/buy-gold': typeof BuyGoldRoute
+  '/buy-silver': typeof BuySilverRoute
+  '/calculator': typeof CalculatorRoute
+  '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
+  '/faq': typeof FaqRoute
+  '/login': typeof LoginRoute
+  '/news': typeof NewsRoute
+  '/plans': typeof PlansRoute
+  '/pricing': typeof PricingRoute
+  '/profile': typeof ProfileRoute
+  '/register': typeof RegisterRoute
+  '/transactions': typeof TransactionsRoute
+  '/wallet': typeof WalletRoute
+  '/admin/login': typeof AdminLoginRoute
+  '/legal/$doc': typeof LegalDocRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/buy-gold': typeof BuyGoldRoute
+  '/buy-silver': typeof BuySilverRoute
+  '/calculator': typeof CalculatorRoute
+  '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
+  '/faq': typeof FaqRoute
+  '/login': typeof LoginRoute
+  '/news': typeof NewsRoute
+  '/plans': typeof PlansRoute
+  '/pricing': typeof PricingRoute
+  '/profile': typeof ProfileRoute
+  '/register': typeof RegisterRoute
+  '/transactions': typeof TransactionsRoute
+  '/wallet': typeof WalletRoute
+  '/admin/login': typeof AdminLoginRoute
+  '/legal/$doc': typeof LegalDocRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/buy-gold'
+    | '/buy-silver'
+    | '/calculator'
+    | '/contact'
+    | '/dashboard'
+    | '/faq'
+    | '/login'
+    | '/news'
+    | '/plans'
+    | '/pricing'
+    | '/profile'
+    | '/register'
+    | '/transactions'
+    | '/wallet'
+    | '/admin/login'
+    | '/legal/$doc'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/buy-gold'
+    | '/buy-silver'
+    | '/calculator'
+    | '/contact'
+    | '/dashboard'
+    | '/faq'
+    | '/login'
+    | '/news'
+    | '/plans'
+    | '/pricing'
+    | '/profile'
+    | '/register'
+    | '/transactions'
+    | '/wallet'
+    | '/admin/login'
+    | '/legal/$doc'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/buy-gold'
+    | '/buy-silver'
+    | '/calculator'
+    | '/contact'
+    | '/dashboard'
+    | '/faq'
+    | '/login'
+    | '/news'
+    | '/plans'
+    | '/pricing'
+    | '/profile'
+    | '/register'
+    | '/transactions'
+    | '/wallet'
+    | '/admin/login'
+    | '/legal/$doc'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  BuyGoldRoute: typeof BuyGoldRoute
+  BuySilverRoute: typeof BuySilverRoute
+  CalculatorRoute: typeof CalculatorRoute
+  ContactRoute: typeof ContactRoute
+  DashboardRoute: typeof DashboardRoute
+  FaqRoute: typeof FaqRoute
+  LoginRoute: typeof LoginRoute
+  NewsRoute: typeof NewsRoute
+  PlansRoute: typeof PlansRoute
+  PricingRoute: typeof PricingRoute
+  ProfileRoute: typeof ProfileRoute
+  RegisterRoute: typeof RegisterRoute
+  TransactionsRoute: typeof TransactionsRoute
+  WalletRoute: typeof WalletRoute
+  AdminLoginRoute: typeof AdminLoginRoute
+  LegalDocRoute: typeof LegalDocRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +273,147 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buy-gold': {
+      id: '/buy-gold'
+      path: '/buy-gold'
+      fullPath: '/buy-gold'
+      preLoaderRoute: typeof BuyGoldRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buy-silver': {
+      id: '/buy-silver'
+      path: '/buy-silver'
+      fullPath: '/buy-silver'
+      preLoaderRoute: typeof BuySilverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/calculator': {
+      id: '/calculator'
+      path: '/calculator'
+      fullPath: '/calculator'
+      preLoaderRoute: typeof CalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news': {
+      id: '/news'
+      path: '/news'
+      fullPath: '/news'
+      preLoaderRoute: typeof NewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plans': {
+      id: '/plans'
+      path: '/plans'
+      fullPath: '/plans'
+      preLoaderRoute: typeof PlansRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/register': {
+      id: '/register'
+      path: '/register'
+      fullPath: '/register'
+      preLoaderRoute: typeof RegisterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transactions': {
+      id: '/transactions'
+      path: '/transactions'
+      fullPath: '/transactions'
+      preLoaderRoute: typeof TransactionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wallet': {
+      id: '/wallet'
+      path: '/wallet'
+      fullPath: '/wallet'
+      preLoaderRoute: typeof WalletRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/login': {
+      id: '/admin/login'
+      path: '/admin/login'
+      fullPath: '/admin/login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal/$doc': {
+      id: '/legal/$doc'
+      path: '/legal/$doc'
+      fullPath: '/legal/$doc'
+      preLoaderRoute: typeof LegalDocRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BuyGoldRoute: BuyGoldRoute,
+  BuySilverRoute: BuySilverRoute,
+  CalculatorRoute: CalculatorRoute,
+  ContactRoute: ContactRoute,
+  DashboardRoute: DashboardRoute,
+  FaqRoute: FaqRoute,
+  LoginRoute: LoginRoute,
+  NewsRoute: NewsRoute,
+  PlansRoute: PlansRoute,
+  PricingRoute: PricingRoute,
+  ProfileRoute: ProfileRoute,
+  RegisterRoute: RegisterRoute,
+  TransactionsRoute: TransactionsRoute,
+  WalletRoute: WalletRoute,
+  AdminLoginRoute: AdminLoginRoute,
+  LegalDocRoute: LegalDocRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
