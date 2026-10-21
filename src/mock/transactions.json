@@ -1,0 +1,6 @@
+[{"id":"TX1001","userEmail":"demo@digitalgold.in","type":"Buy","metal":"Gold","grams":1.5,"amount":15100,"date":"2026-10-19","status":"Success"},
+{"id":"TX1002","userEmail":"demo@digitalgold.in","type":"Buy","metal":"Silver","grams":100,"amount":11400,"date":"2026-10-17","status":"Success"},
+{"id":"TX1003","userEmail":"demo@digitalgold.in","type":"Deposit","metal":"-","grams":0,"amount":20000,"date":"2026-10-15","status":"Success"},
+{"id":"TX1004","userEmail":"rahul@example.com","type":"Buy","metal":"Gold","grams":0.5,"amount":5020,"date":"2026-10-14","status":"Success"},
+{"id":"TX1005","userEmail":"demo@digitalgold.in","type":"Sell","metal":"Silver","grams":20,"amount":2200,"date":"2026-10-10","status":"Success"},
+{"id":"TX1006","userEmail":"sneha@example.com","type":"Buy","metal":"Silver","grams":75,"amount":8200,"date":"2026-10-08","status":"Pending"}]

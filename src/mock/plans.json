@@ -1,0 +1,5 @@
+[{"id":"p1","name":"Starter","metal":"Gold","price":500,"period":"month","features":["Start with ₹500/month","24K digital gold","Free secure vault","Cancel anytime"]},
+{"id":"p2","name":"Silver Saver","metal":"Silver","price":1000,"period":"month","features":["999 fine silver","Auto-invest monthly","Zero storage fees","Coin redemption"]},
+{"id":"p3","name":"Gold Growth","metal":"Gold","price":5000,"period":"month","features":["Priority pricing","Insured storage","Monthly reports","Free home delivery"],"popular":true},
+{"id":"p4","name":"Premium Investor","metal":"Gold + Silver","price":25000,"period":"month","features":["Dedicated advisor","Lowest spreads","Mixed portfolio","Quarterly reviews"]},
+{"id":"p5","name":"Corporate","metal":"Gold + Silver","price":100000,"period":"month","features":["Employee gifting","Bulk pricing","API-ready reports","Account manager"]}]
