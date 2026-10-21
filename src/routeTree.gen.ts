@@ -25,7 +25,16 @@ import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as RegisterRouteImport } from './routes/register'
 import { Route as TransactionsRouteImport } from './routes/transactions'
 import { Route as WalletRouteImport } from './routes/wallet'
+import { Route as AdminContentRouteImport } from './routes/admin.content'
+import { Route as AdminDashboardRouteImport } from './routes/admin.dashboard'
+import { Route as AdminKycRouteImport } from './routes/admin.kyc'
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
+import { Route as AdminMessagesRouteImport } from './routes/admin.messages'
+import { Route as AdminOrdersRouteImport } from './routes/admin.orders'
+import { Route as AdminSettingsRouteImport } from './routes/admin.settings'
+import { Route as AdminTransactionsRouteImport } from './routes/admin.transactions'
+import { Route as AdminUsersRouteImport } from './routes/admin.users'
+import { Route as AdminWalletRouteImport } from './routes/admin.wallet'
 import { Route as LegalDocRouteImport } from './routes/legal.$doc'
 
 const IndexRoute = IndexRouteImport.update({
@@ -108,9 +117,54 @@ const WalletRoute = WalletRouteImport.update({
   path: '/wallet',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminContentRoute = AdminContentRouteImport.update({
+  id: '/admin/content',
+  path: '/admin/content',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminDashboardRoute = AdminDashboardRouteImport.update({
+  id: '/admin/dashboard',
+  path: '/admin/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKycRoute = AdminKycRouteImport.update({
+  id: '/admin/kyc',
+  path: '/admin/kyc',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminLoginRoute = AdminLoginRouteImport.update({
   id: '/admin/login',
   path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminMessagesRoute = AdminMessagesRouteImport.update({
+  id: '/admin/messages',
+  path: '/admin/messages',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminOrdersRoute = AdminOrdersRouteImport.update({
+  id: '/admin/orders',
+  path: '/admin/orders',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminSettingsRoute = AdminSettingsRouteImport.update({
+  id: '/admin/settings',
+  path: '/admin/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminTransactionsRoute = AdminTransactionsRouteImport.update({
+  id: '/admin/transactions',
+  path: '/admin/transactions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminUsersRoute = AdminUsersRouteImport.update({
+  id: '/admin/users',
+  path: '/admin/users',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminWalletRoute = AdminWalletRouteImport.update({
+  id: '/admin/wallet',
+  path: '/admin/wallet',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LegalDocRoute = LegalDocRouteImport.update({
@@ -136,7 +190,16 @@ export interface FileRoutesByFullPath {
   '/register': typeof RegisterRoute
   '/transactions': typeof TransactionsRoute
   '/wallet': typeof WalletRoute
+  '/admin/content': typeof AdminContentRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/kyc': typeof AdminKycRoute
   '/admin/login': typeof AdminLoginRoute
+  '/admin/messages': typeof AdminMessagesRoute
+  '/admin/orders': typeof AdminOrdersRoute
+  '/admin/settings': typeof AdminSettingsRoute
+  '/admin/transactions': typeof AdminTransactionsRoute
+  '/admin/users': typeof AdminUsersRoute
+  '/admin/wallet': typeof AdminWalletRoute
   '/legal/$doc': typeof LegalDocRoute
 }
 export interface FileRoutesByTo {
@@ -156,7 +219,16 @@ export interface FileRoutesByTo {
   '/register': typeof RegisterRoute
   '/transactions': typeof TransactionsRoute
   '/wallet': typeof WalletRoute
+  '/admin/content': typeof AdminContentRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/kyc': typeof AdminKycRoute
   '/admin/login': typeof AdminLoginRoute
+  '/admin/messages': typeof AdminMessagesRoute
+  '/admin/orders': typeof AdminOrdersRoute
+  '/admin/settings': typeof AdminSettingsRoute
+  '/admin/transactions': typeof AdminTransactionsRoute
+  '/admin/users': typeof AdminUsersRoute
+  '/admin/wallet': typeof AdminWalletRoute
   '/legal/$doc': typeof LegalDocRoute
 }
 export interface FileRoutesById {
@@ -177,7 +249,16 @@ export interface FileRoutesById {
   '/register': typeof RegisterRoute
   '/transactions': typeof TransactionsRoute
   '/wallet': typeof WalletRoute
+  '/admin/content': typeof AdminContentRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/kyc': typeof AdminKycRoute
   '/admin/login': typeof AdminLoginRoute
+  '/admin/messages': typeof AdminMessagesRoute
+  '/admin/orders': typeof AdminOrdersRoute
+  '/admin/settings': typeof AdminSettingsRoute
+  '/admin/transactions': typeof AdminTransactionsRoute
+  '/admin/users': typeof AdminUsersRoute
+  '/admin/wallet': typeof AdminWalletRoute
   '/legal/$doc': typeof LegalDocRoute
 }
 export interface FileRouteTypes {
@@ -199,7 +280,16 @@ export interface FileRouteTypes {
     | '/register'
     | '/transactions'
     | '/wallet'
+    | '/admin/content'
+    | '/admin/dashboard'
+    | '/admin/kyc'
     | '/admin/login'
+    | '/admin/messages'
+    | '/admin/orders'
+    | '/admin/settings'
+    | '/admin/transactions'
+    | '/admin/users'
+    | '/admin/wallet'
     | '/legal/$doc'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -219,7 +309,16 @@ export interface FileRouteTypes {
     | '/register'
     | '/transactions'
     | '/wallet'
+    | '/admin/content'
+    | '/admin/dashboard'
+    | '/admin/kyc'
     | '/admin/login'
+    | '/admin/messages'
+    | '/admin/orders'
+    | '/admin/settings'
+    | '/admin/transactions'
+    | '/admin/users'
+    | '/admin/wallet'
     | '/legal/$doc'
   id:
     | '__root__'
@@ -239,7 +338,16 @@ export interface FileRouteTypes {
     | '/register'
     | '/transactions'
     | '/wallet'
+    | '/admin/content'
+    | '/admin/dashboard'
+    | '/admin/kyc'
     | '/admin/login'
+    | '/admin/messages'
+    | '/admin/orders'
+    | '/admin/settings'
+    | '/admin/transactions'
+    | '/admin/users'
+    | '/admin/wallet'
     | '/legal/$doc'
   fileRoutesById: FileRoutesById
 }
@@ -260,7 +368,16 @@ export interface RootRouteChildren {
   RegisterRoute: typeof RegisterRoute
   TransactionsRoute: typeof TransactionsRoute
   WalletRoute: typeof WalletRoute
+  AdminContentRoute: typeof AdminContentRoute
+  AdminDashboardRoute: typeof AdminDashboardRoute
+  AdminKycRoute: typeof AdminKycRoute
   AdminLoginRoute: typeof AdminLoginRoute
+  AdminMessagesRoute: typeof AdminMessagesRoute
+  AdminOrdersRoute: typeof AdminOrdersRoute
+  AdminSettingsRoute: typeof AdminSettingsRoute
+  AdminTransactionsRoute: typeof AdminTransactionsRoute
+  AdminUsersRoute: typeof AdminUsersRoute
+  AdminWalletRoute: typeof AdminWalletRoute
   LegalDocRoute: typeof LegalDocRoute
 }
 
@@ -378,11 +495,74 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WalletRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/content': {
+      id: '/admin/content'
+      path: '/admin/content'
+      fullPath: '/admin/content'
+      preLoaderRoute: typeof AdminContentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/dashboard': {
+      id: '/admin/dashboard'
+      path: '/admin/dashboard'
+      fullPath: '/admin/dashboard'
+      preLoaderRoute: typeof AdminDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/kyc': {
+      id: '/admin/kyc'
+      path: '/admin/kyc'
+      fullPath: '/admin/kyc'
+      preLoaderRoute: typeof AdminKycRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/login': {
       id: '/admin/login'
       path: '/admin/login'
       fullPath: '/admin/login'
       preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/messages': {
+      id: '/admin/messages'
+      path: '/admin/messages'
+      fullPath: '/admin/messages'
+      preLoaderRoute: typeof AdminMessagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/orders': {
+      id: '/admin/orders'
+      path: '/admin/orders'
+      fullPath: '/admin/orders'
+      preLoaderRoute: typeof AdminOrdersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/settings': {
+      id: '/admin/settings'
+      path: '/admin/settings'
+      fullPath: '/admin/settings'
+      preLoaderRoute: typeof AdminSettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/transactions': {
+      id: '/admin/transactions'
+      path: '/admin/transactions'
+      fullPath: '/admin/transactions'
+      preLoaderRoute: typeof AdminTransactionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/users': {
+      id: '/admin/users'
+      path: '/admin/users'
+      fullPath: '/admin/users'
+      preLoaderRoute: typeof AdminUsersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/wallet': {
+      id: '/admin/wallet'
+      path: '/admin/wallet'
+      fullPath: '/admin/wallet'
+      preLoaderRoute: typeof AdminWalletRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/legal/$doc': {
@@ -412,7 +592,16 @@ const rootRouteChildren: RootRouteChildren = {
   RegisterRoute: RegisterRoute,
   TransactionsRoute: TransactionsRoute,
   WalletRoute: WalletRoute,
+  AdminContentRoute: AdminContentRoute,
+  AdminDashboardRoute: AdminDashboardRoute,
+  AdminKycRoute: AdminKycRoute,
   AdminLoginRoute: AdminLoginRoute,
+  AdminMessagesRoute: AdminMessagesRoute,
+  AdminOrdersRoute: AdminOrdersRoute,
+  AdminSettingsRoute: AdminSettingsRoute,
+  AdminTransactionsRoute: AdminTransactionsRoute,
+  AdminUsersRoute: AdminUsersRoute,
+  AdminWalletRoute: AdminWalletRoute,
   LegalDocRoute: LegalDocRoute,
 }
 export const routeTree = rootRouteImport

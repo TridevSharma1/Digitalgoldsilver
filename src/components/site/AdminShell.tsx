@@ -33,7 +33,6 @@ export function AdminShell({ children }: { children: ReactNode }) {
     <Link
       key={to}
       to={to}
-      onClick={mobile ? undefined : undefined}
       className={
         "flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition whitespace-nowrap " +
         (mobile ? "border hover:border-primary" : "hover:bg-secondary hover:text-primary")
